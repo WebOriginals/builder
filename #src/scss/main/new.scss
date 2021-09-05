@@ -1,0 +1,60 @@
+.new{
+  margin: 25px 0;
+  padding: 25px 0;
+  @include mq('tablet') {
+    padding: 150px 0 150px;
+    margin: 50px 0;
+  }
+
+}
+.new__title{
+  margin-bottom: 50px;
+}
+
+
+.new-slide-content__img{
+  img{
+    max-width: 100%;
+  }
+}
+
+.new-pagination{
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.new-slide{
+  background: $color_7;
+  box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  height: auto;
+  @include mq('tablet') {
+    padding: 20px;
+
+  }
+}
+
+.new-slide-content{
+  display: block;
+  background: $color_1;
+  box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+  border-radius: 10px;
+  text-align: center;
+  height: 100%;
+  &__date{
+    color:  #AAAAAA;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  &__name{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 20px 20px;
+    color: $color_2;
+    @include mq('tablet') {
+      padding: 0 30px 15px;
+    }
+  }
+}

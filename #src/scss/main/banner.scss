@@ -1,0 +1,17 @@
+.banner{
+  padding: 25px 0;
+  @include mq('tablet') {
+    padding: 50px 0 ;
+  }
+}
+.banner__pagination{
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-slide{
+  img{
+    width: 100%;
+  }
+}

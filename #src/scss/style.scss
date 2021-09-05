@@ -1,0 +1,71 @@
+//<МИКСИНЫ>===============================================================================================
+@import "_defuld/mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&display=swap&subset=cyrillic-ext');
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+//@import "_defuld/fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+//@import "icons";
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: 'Montserrat', sans-serif;
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+@import "_defuld/originStyle";
+//@import "_basice/forms";
+//@import "_basice/bread-crumbs-headline";
+@import "_basice/ui";
+@import "_defuld/nouislider";
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//component
+//@import "../component/dropDownLlist/scss/dropDownLlist.scss";
+@import "../component/Modals/scss/modals.scss";
+//@import "../component/lazyLoad/scss/lazyLoad.scss";
+//@import "../component/Tabs/scss/tabs.scss";
+//@import "../component/Quantity/scss/quantity.scss";
+
+
+@import "_basice/popup";
+@import "_basice/header";
+@import "_basice/menu/menu";
+@import "_basice/footer";
+
+
+
+//main
+@import "main/first";
+@import "main/portfolio";
+@import "main/comfort";
+@import "main/mortgage";
+@import "main/table";
+@import "main/map";
+@import "main/new";
+@import "main/banner";
+
+
+//about_us
+@import "about_us/slider-tel";
+@import "about_us/building";
+@import "about_us/certificates";
+@import "about_us/warranty";
+@import "about_us/offers";
+
+//contacts
+@import "contact/info";
+@import "contact/map";
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

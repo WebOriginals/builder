@@ -1,0 +1,71 @@
+.offers {
+  padding: 25px 0;
+  background: $color_7;
+  border-radius: 10px;
+  @include mq('tablet') {
+    padding: 50px 0;
+  }
+}
+.offers__title{
+  margin-bottom: 50px;
+}
+
+
+.offers__body{
+  display: grid;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+}
+
+.offers-form-grid{
+  display: grid;
+  border-top: 1px dashed $color_3;
+  padding-top: 20px;
+  @include mq('tablet') {
+    padding-top: 0;
+    padding-left: 15px;
+    border-top: none;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 30px;
+    align-items: center;
+    border-left: 1px dashed $color_3;
+  }
+}
+
+.offers-form-grid__form{
+  display: grid;
+  grid-gap: 30px 50px;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.offers-form-grid__form-text{
+  color: $color_3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  @include mq('tablet') {
+    grid-column: span 2;
+  }
+}
+
+.offers-form-grid__text{
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  @include maq('tablet') {
+    margin-bottom: 30px;
+  }
+}
+
+.offers__left{
+  b{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+  }
+}

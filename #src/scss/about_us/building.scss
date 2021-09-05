@@ -1,0 +1,66 @@
+.building {
+  padding: 25px 0;
+  @include maq('tablet') {
+    margin-bottom: 130px;
+  }
+  @include mq('tablet') {
+    padding: 50px 0;
+  }
+}
+
+.building__title {
+  margin-bottom: 50px;
+}
+
+.building__body {
+  background: $color_7;
+  box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+  padding: 50px 0;
+  @include maq('tablet') {
+    padding: 50px 0 200px;
+  }
+}
+
+.building-grid {
+  display: grid;
+  grid-gap: 50px;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+  }
+}
+
+.building-grid__column {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+
+  &:last-child {
+    font-size: 18px;
+    @include mq('tablet') {
+      grid-column: span 3;
+
+    }
+  }
+}
+.relative{
+  position: relative;
+}
+.building__img{
+  position: absolute;
+  right: 15px;
+
+  @include maq('tablet') {
+    margin-top: 50px;
+    width: 40%;
+    img{
+      max-width: 100%;
+    }
+  }
+
+  @include mq('tablet') {
+    top: -150px;
+    right: 0;
+  }
+}

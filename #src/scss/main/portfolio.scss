@@ -1,0 +1,116 @@
+.portfolio{
+  padding: 25px 0;
+  @include mq('tablet') {
+    padding: 50px 0;
+  }
+
+}
+.portfolio__title{
+  @include adaptive-margin-bottom(60,30,1);
+}
+.portfolio__body{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.portfolio-column{
+  border-radius: 20px;
+  box-shadow: 0px 4px 7px rgba(33, 45, 85, 0.1);
+  background: $color_1;
+  overflow: hidden;
+}
+.portfolio-column__slider{
+  position: relative;
+}
+.portfolio-column__slide{
+  position: relative;
+  width: 100%;
+  height: 240px;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    //left: -1px;
+    object-fit: none;
+    object-position: center;
+  }
+}
+.portfolio-column__slider-nav{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: calc(50% - 22px);
+  width: 100%;
+  z-index: 10;
+
+}
+.nav{
+  &:hover{
+    circle{
+      fill: $color_3;
+    }
+    path{
+      fill: $color_1;
+    }
+  }
+}
+.portfolio-column__slider-btn-prev{
+  cursor: pointer;
+}
+.portfolio-column__slider-btn-next{
+  cursor: pointer;
+}
+.portfolio-column__slide-text{
+  color: $color_1;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  padding-left: 25px;
+  background: url("../img/icons/point-sl.svg") no-repeat left;
+  background-size: 20px;
+}
+.portfolio-column__description{
+  display: block;
+  background: $color_1;
+  color: $color_2;
+  padding: 20px;
+  @include mq('tablet-wide') {
+    padding: 20px 30px;
+  }
+
+
+  &:hover{
+    .portfolio-column__title{
+      color: $color_3;
+      background: url("../img/icons/Arrow-sl-b.svg") no-repeat right;
+    }
+
+  }
+
+  .portfolio-column__title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 40px;
+    background: url("../img/icons/Arrow-sl.svg") no-repeat right;
+  }
+  .portfolio-column__list{
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 18px;
+
+    li{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      span{
+        font-size: 18px;
+      }
+      b{
+        font-size: 20px;
+      }
+    }
+  }
+}

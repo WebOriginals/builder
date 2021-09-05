@@ -1,0 +1,65 @@
+.warranty{
+  padding: 25px 0;
+  @include mq('tablet') {
+    padding: 50px 0;
+  }
+}
+.warranty__body{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.warranty__body-slired{
+  min-width: 0;
+
+}
+.warranty__slide{
+ display: grid;
+  justify-items: center;
+}
+
+.warranty__title{
+  margin-bottom: 50px;
+}
+.warranty__slide-text{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.warranty__list{
+  margin-bottom: 50px;
+  li{
+    @include adaptive-font(20,16,1);
+    display: flex;
+    align-items: center;
+  }
+}
+.warranty__btn{
+  text-align: center;
+}
+
+.warranty__nav{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  top: 40%;
+  left: 0;
+  @include maq('tablet') {
+    display: none;
+  }
+}
+
+.warranty__pagenation{
+  padding: 40px 0 10px;
+  display: flex;
+  justify-content: center;
+
+  @include mq('tablet') {
+    display: none;
+  }
+}

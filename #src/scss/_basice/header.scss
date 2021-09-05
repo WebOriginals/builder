@@ -1,0 +1,143 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: radial-gradient(180% 180%, #fff, rgba(255, 255, 255, 0));
+}
+.not-main{
+  .header {
+    position: relative;
+
+  }
+}
+
+@include maq('tablet-wide') {
+  .header::before {
+    content: '';
+    position: absolute;
+    background-color: $color_2;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left .3s ease 0s;
+  }
+}
+._lock {
+  @include maq('tablet-wide') {
+    .header::before {
+      content: '';
+      position: absolute;
+      background-color: $color_2;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+._lock .header{
+  @include mq('tablet-wide') {
+    padding-right: 17px;
+  }
+}
+
+
+.body-header{
+  display: grid;
+  grid-template-columns: 160px auto;
+  align-items: center;
+  height: 85px;
+  @include maq('tablet-wide') {
+    width: 100%;
+    justify-content: space-between;
+    grid-gap: 30px;
+    .header__logo{
+      margin-right: auto;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  @include mq('tablet-990') {
+    grid-template-columns: 70px auto auto;
+    grid-gap: 15px;
+  }
+  @include mq('tablet-wide') {
+    grid-template-columns: 160px auto auto;
+  }
+  @include mq('desktop') {
+    grid-template-columns: 160px auto auto 30px;
+    height: 120px;
+    grid-gap: 15px;
+    justify-content: space-between;
+  }
+}
+.header__logo{
+  display: block;
+  width: 100%;
+  z-index: 10;
+  img{
+    max-width: 100%;
+  }
+}
+
+.header-phone__link{
+  color: $color_2;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.header-callback__link{
+  color: $color_2;
+  border-bottom: 1px solid $color_2;
+}
+.header__bell{
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+body._pc{
+  .header-phone__link{
+    &:hover{
+      color: $color_3;
+    }
+  }
+}
+
+.stickytop {
+  .body-header{
+    height: 85px;
+  }
+  .body-header-bottom{
+    display: none;
+  }
+}
+
+.menu-mobile{
+  display: grid;
+  grid-gap:  35px;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+  .menu-mobile__wrapper{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 30px 25px;
+    align-items: center;
+  }
+  @include mq('tablet-990') {
+    display: none;
+  }
+}
+
+.header-phone-desc,
+.header-callback-desc{
+  @include maq('tablet-990') {
+    display: none;
+  }
+}

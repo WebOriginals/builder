@@ -1,0 +1,104 @@
+footer{
+  padding: 20px 0;
+  background-color: $color_6;
+  color: $color_1;
+  @include mq('tablet') {
+    padding: 55px 0;
+  }
+  a{
+    color: $color_1;
+    &:hover{
+      color: $color_3;
+    }
+  }
+}
+
+.footer-body-top{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-template-columns:  auto auto ;
+    justify-content: space-between;
+    .footer__logo{
+      grid-column: span 2;
+    }
+  }
+  @include mq('desktop') {
+    grid-template-columns: 176px auto auto auto auto;
+    justify-content: space-between;
+    .footer__logo{
+      grid-column: span 1;
+    }
+  }
+
+  .footer__links{
+    display: grid;
+    grid-gap: 15px;
+  }
+  .footer__title-link{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .footer__link{
+    font-size: 22px;
+  }
+}
+.footer-body-middle{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-template-columns: auto auto ;
+    justify-content: space-between;
+    .footer__text{
+      grid-column: span 3;
+    }
+  }
+  @include mq('tablet-wide') {
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+
+  }
+
+  .footer__phone{
+    display: grid;
+    grid-gap: 10px;
+    align-content: start;
+    background-image: url("../img/icons/phone-w.svg");
+    background-position: top 15px left;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+  }
+  .footer__info{
+    display: grid;
+    grid-gap: 10px;
+    align-content: start;
+
+    .footer__address,
+    .footer__mail{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .footer__text{
+    font-size: 12px;
+  }
+}
+
+.footer-body-bottom{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-template-columns: auto auto auto ;
+    justify-content: space-between;
+  }
+}
+
+.footer__content{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-gap: 50px;
+  }
+}

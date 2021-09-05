@@ -1,0 +1,50 @@
+.first{
+
+}
+.first-slide{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-slide__body{
+  height: 80vh;
+  display: grid;
+  grid-gap: 30px;
+  align-content: center;
+
+  @include mq('tablet-wide') {
+    margin-top: 5%;
+    height: 100vh;
+  }
+  @include mq('desktop-wide') {
+    margin-top: 5%;
+    height: 80vh;
+  }
+  @include maq('tablet') {
+    height: 95vh;
+  }
+}
+.first-slide__title{
+  @include adaptive-font(60,28,1);
+  @include mq('tablet-wide') {
+    width: 60%;
+  }
+  @include maq('tablet') {
+  margin-top: -45%;
+  }
+}
+.first-slide__list{
+  display: grid;
+  grid-gap: 30px;
+  @include maq('tablet') {
+    display: none;
+  }
+}
+.first-slide__btn{
+  text-align: center;
+}
+.first__pagination{
+  padding: 0 0 10px;
+  display: flex;
+  justify-content: center;
+}
