@@ -6,8 +6,7 @@
 @@include('files/popup.js')
 @@include('files/headerFix.js')
 @@include('files/calculator.js')
-@@include('files/map.js')
-@@include('files/map_main.js')
+
 
 
 //slider
