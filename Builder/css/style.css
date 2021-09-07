@@ -1985,20 +1985,20 @@ footer a:hover {
 .table-grid {
   display: -ms-grid;
   display: grid;
-  justify-items: center;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .table-main {
   padding: 10px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 10px rgba(33, 45, 85, 0.1);
-          box-shadow: 0px 4px 10px rgba(33, 45, 85, 0.1);
-  border-radius: 20px;
 }
 
 .table-main__column {
   position: relative;
   border-bottom: 1px solid #ECECEC;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .table-main__column img {
@@ -3141,6 +3141,7 @@ footer a:hover {
   }
 
   .table-grid {
+    justify-items: center;
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px 0;
@@ -3148,6 +3149,9 @@ footer a:hover {
 
   .table-main {
     padding: 10px 50px;
+    -webkit-box-shadow: 0px 4px 10px rgba(33, 45, 85, 0.1);
+            box-shadow: 0px 4px 10px rgba(33, 45, 85, 0.1);
+    border-radius: 20px;
   }
 
   .table-main__column {
@@ -3438,6 +3442,33 @@ footer a:hover {
     max-width: 100%;
   }
 
+  .table-main .table-main__column:nth-child(4n+1) {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .table-main .table-main__column:nth-child(2n+2) {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 5px;
+    text-align: center;
+  }
+
+  .table-main .table-main__column:nth-child(4n+3) {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 5px;
+    text-align: center;
+  }
+
   .map__nav {
     top: calc(50% - 37px);
   }
@@ -3653,6 +3684,10 @@ footer a:hover {
 
   .mortgage-calculator-form__btn {
     width: 100%;
+  }
+
+  .table-top {
+    display: none;
   }
 
   .building {
