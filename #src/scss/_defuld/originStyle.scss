@@ -54,6 +54,7 @@ body {
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
+  position: relative;
   max-width: $maxWidthContainer + px;
   margin: 0 auto;
   @media (max-width: $md1+px) {

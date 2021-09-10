@@ -35,7 +35,7 @@ $fontFamily: 'Montserrat', sans-serif;
 //@import "../component/dropDownLlist/scss/dropDownLlist.scss";
 @import "../component/Modals/scss/modals.scss";
 //@import "../component/lazyLoad/scss/lazyLoad.scss";
-//@import "../component/Tabs/scss/tabs.scss";
+@import "../component/Tabs/scss/tabs.scss";
 //@import "../component/Quantity/scss/quantity.scss";
 
 
@@ -75,5 +75,6 @@ $fontFamily: 'Montserrat', sans-serif;
 @import "HC/tab";
 @import "HC/doc";
 @import "HC/hous-sl";
+@import "HC/map";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
