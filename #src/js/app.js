@@ -26,4 +26,5 @@
 @@include('files/sliders/doc.js')
 @@include('files/sliders/house-sl.js')
 @@include('files/sliders/infrastructure.js')
+@@include('files/sliders/finishing.js')
 //slider

@@ -1,0 +1,43 @@
+.finishing{
+  padding: 25px 0 ;
+  @include mq('tablet-wide') {
+    padding: 50px 0 ;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__container{
+    margin-bottom: 50px;
+  }
+  &__slide{
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+  &__slide-img{
+    width: 100%;
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq('tablet-wide') {
+      height: 220px;
+    }
+
+  }
+  &__nav{
+    z-index: 10;
+    position: absolute;
+    top: calc(50% - 12px);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    width: 100%;
+    @include mq('tablet-wide') {
+      height: 220px;
+    }
+  }
+  &__description{
+
+  }
+}
