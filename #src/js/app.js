@@ -19,4 +19,9 @@
 @@include('files/sliders/img.js')
 @@include('files/sliders/first.js')
 @@include('files/sliders/map.js')
+@@include('files/sliders/HC.js')
+@@include('files/sliders/show-offs.js')
+@@include('files/sliders/room.js')
+@@include('files/sliders/doc.js')
+@@include('files/sliders/house-sl.js')
 //slider

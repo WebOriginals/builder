@@ -229,6 +229,12 @@ if(document.querySelector('.comfort')) {
         comfort.classList.add('_swiper');
     }
 }
+if(document.querySelector('.sale__content')) {
+    if (window.screen.width < 767) {
+        let comfort = document.querySelector('.sale__content');
+        comfort.classList.add('_swiper');
+    }
+}
 if(document.querySelector('._swiper')) {
 //BildSlider
     let sliders = document.querySelectorAll('._swiper');

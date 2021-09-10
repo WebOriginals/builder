@@ -1,0 +1,86 @@
+.HCfirst {
+  margin-bottom: 25px;
+  @include mq('tablet-wide') {
+    margin-bottom: 50px;
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  &__title {
+
+    @include adaptive-font(60, 28, 1);
+    margin-bottom: 25px;
+    @media only screen and (max-width: 1800px){
+      margin-top: 25%;
+    }
+  }
+
+  &__text {
+    @include adaptive-font(32, 20, 1);
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    @include adaptive-font(35, 24, 1);
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    margin: 0 auto 50px;
+
+  }
+
+  &__slider {
+    min-width: 0;
+  }
+
+  &__container {
+    padding: 10px;
+  }
+
+  &__slide {
+    background: $color_7;
+    box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: calc(50% - 12px);
+      left: 0;
+      width: 29px;
+      height: 24px;
+      border-radius:50%;
+      background-color: $color_7;
+      box-shadow: -8px 0px 12px -10px rgba(34, 60, 80, 0.13) inset;
+    }
+  }
+
+  &__slide-body {
+    background: $color_1;
+    box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.1);
+    padding: 20px;
+  }
+
+  &__slide-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__slide-price {
+    font-weight: 700;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,22 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('ЖК')
+    body
+        .wrapper
+            include pug/_basice/_header
+            .page.main
+                include pug/HC/first
+                include pug/HC/show-offs
+                include pug/HC/sale
+
+
+                include pug/about_us/offers
+                include pug/HC/doc
+                include pug/HC/hous-sl
+
+
+            include pug/_basice/_footer
+
+        include pug/_basice/_popup
+        include pug/_basice/_js

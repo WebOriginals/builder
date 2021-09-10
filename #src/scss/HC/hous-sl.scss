@@ -1,0 +1,19 @@
+.house{
+  padding: 25px 0 ;
+  @include mq('tablet-wide') {
+    padding: 50px 0 ;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__container{
+    padding: 10px;
+  }
+  &__pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+  }
+}

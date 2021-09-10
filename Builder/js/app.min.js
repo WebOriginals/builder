@@ -530,4 +530,139 @@ if (document.querySelector('.map-container')) {
         },
     });
 }
+if (document.querySelector('.HCfirst__container')) {
+
+    let news = new Swiper(".HCfirst__container", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
+        watchOverflow: true,
+        speed: 800,
+        loop:true,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1.3,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+}
+if (document.querySelector('.show-offs__container')) {
+    let show_offs = new Swiper(".show-offs__container", {
+        slidesPerView: 1,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".show-offs__pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+}
+if (window.screen.width < 1199) {
+    if (document.querySelector('.sale__content')) {
+
+        let room = new Swiper(".sale__content", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            observer: true,
+            observeParents: true,
+            watchOverflow: true,
+            speed: 800,
+            loop: true,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    }
+}
+if (document.querySelector('.doc__container')) {
+    let doc = new Swiper(".doc__container", {
+        slidesPerView: 1,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".doc__pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+}
+if (document.querySelector('.house__container')) {
+    let doc = new Swiper(".house__container", {
+        slidesPerView: 1,
+
+        spaceBetween: 30,
+        pagination: {
+            el: ".house__pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+        },
+    });
+}
 //slider
