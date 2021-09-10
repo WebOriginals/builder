@@ -770,15 +770,15 @@ if (document.querySelector('.infrastructure__container')) {
     let doc = new Swiper(".infrastructure__container", {
         slidesPerView: 1,
         spaceBetween: 30,
-        pagination: {
-            el: ".doc__pagination",
-            clickable: true,
+        navigation: {
+            nextEl: '.infrastructure__slider-btn-next',
+            prevEl: '.infrastructure__slider-btn-prev',
         },
 
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 15,
                 grid: {
                     rows: 2,
                 },
