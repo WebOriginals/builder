@@ -3224,6 +3224,7 @@ footer a:hover {
   background: rgba(255, 255, 255, 0.85);
   padding: 20px;
   border-radius: 10px;
+  position: relative;
 }
 
 .HCtab-pane__text h2 {
@@ -3233,6 +3234,16 @@ footer a:hover {
 
 .HCtab-pane__text p {
   font-size: 16px;
+}
+
+.HCtab-pane__nav {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 
 .doc {
