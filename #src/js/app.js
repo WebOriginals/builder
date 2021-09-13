@@ -7,6 +7,7 @@
 @@include('files/headerFix.js')
 @@include('files/calculator.js')
 @@include('files/infrastructure-map.js')
+@@include('files/saleTab.js')
 
 
 

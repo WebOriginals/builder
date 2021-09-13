@@ -1,0 +1,18 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('ипотека')
+    body
+        .wrapper
+            include pug/_basice/_header
+            .page.main
+                include pug/mortgage/first
+                include pug/mortgage/about_us
+                include pug/mortgage/apartments
+                include pug/mortgage/apartments
+                include pug/about_us/offers
+
+            include pug/_basice/_footer
+
+        include pug/_basice/_popup
+        include pug/_basice/_js

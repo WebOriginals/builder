@@ -1,22 +1,24 @@
-.sale{
-  padding: 25px 0 ;
+.sale {
+  padding: 25px 0;
   @include mq('tablet-wide') {
-    padding: 50px 0 ;
+    padding: 50px 0;
   }
 
-  &__title{
+  &__title {
     margin-bottom: 30px;
   }
-  &__text{
+
+  &__text {
     text-align: center;
     margin-bottom: 50px;
-    @include adaptive-font(22,18,1);
+    @include adaptive-font(22, 18, 1);
   }
 
-  &-nav{
+  &-nav {
 
   }
-  &-nav-top{
+
+  &-nav-top {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
@@ -24,7 +26,8 @@
     @include mq('tablet-wide') {
       grid-template-columns: 160px 160px 160px;
     }
-    span{
+
+    span {
       color: $color_3;
       font-size: 26px;
       @include maq('tablet-wide') {
@@ -33,14 +36,21 @@
       }
     }
   }
-  &-nav-top__element{
+
+  &-nav-top__element {
     background: $color_7;
     box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
     border-radius: 10px;
     padding: 15px;
 
+    &.active {
+      border: 1px solid $color_3;
+      color: $color_3;
+    }
   }
-  &-nav-top__body{
+
+
+  &-nav-top__body {
     background: $color_1;
     box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
     border-radius: 10px;
@@ -48,7 +58,8 @@
     font-weight: 600;
     text-align: center;
   }
-  &__nav-bottom{
+
+  &__nav-bottom {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr;
@@ -58,13 +69,18 @@
     }
     margin: 30px 0 50px;
   }
-  &__nav-bottom__element{
+
+  &__nav-bottom__element {
     background: $color_7;
     box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
     border-radius: 10px;
     padding: 15px;
   }
-  &__nav-bottom__body{
+  &__nav-bottom__element.active{
+    border: 1px solid $color_3;
+    color: $color_3;
+  }
+  &__nav-bottom__body {
     background: $color_1;
     box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
     border-radius: 10px;
@@ -73,7 +89,8 @@
     text-align: center;
   }
 }
-.sale__content{
+
+.sale__content {
   @include mq('tablet-wide') {
     display: grid;
     grid-gap: 30px;
@@ -81,19 +98,25 @@
   }
 }
 
-.sale-apartments{
+.sale-apartments {
   padding: 15px;
   background: $color_1;
   box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
   border-radius: 10px;
-  &__name{
-  @include adaptive-font(22,18,1);
+
+  &__name {
+    @include adaptive-font(22, 18, 1);
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
   }
-  &__body{
-  display: grid;
+
+  &.hide {
+    display: none;
+  }
+
+  &__body {
+    display: grid;
     grid-gap: 15px;
     grid-template-columns: 130px 1fr;
 
@@ -101,15 +124,18 @@
       padding: 30px 20px;
     }
   }
-  &__img{
-    img{
+
+  &__img {
+    img {
       max-width: 100%;
     }
   }
-  &__right{
+
+  &__right {
     display: grid;
     grid-gap: 20px;
-    a{
+
+    a {
       color: $color_2;
       text-align: center;
       font-weight: 600;
@@ -117,39 +143,45 @@
       margin: auto;
     }
   }
-  &__conditions{
+
+  &__conditions {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    .sale-apartments__block{
+
+    .sale-apartments__block {
       display: inline-flex;
       gap: 5px;
-      p{
+
+      p {
         color: #656D89;
       }
     }
   }
-  &__price{
+
+  &__price {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:  10px;
+    gap: 10px;
     @include mq('tablet-wide') {
-      gap:  30px;
+      gap: 30px;
     }
 
-    span{
+    span {
       border-radius: 10px;
       border: 1px solid $color_3;
       color: $color_3;
       padding: 10px;
     }
-    p{
+
+    p {
       font-size: 18px;
       font-weight: 600;
     }
   }
-  &__btn{
+
+  &__btn {
     font-size: 18px;
     @include maq('tablet-wide') {
       width: 100%;
@@ -158,7 +190,7 @@
   }
 }
 
-.sale__btns{
+.sale__btns {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -167,25 +199,28 @@
   align-items: center;
   text-align: center;
 
-  a{
+  a {
     color: $color_3;
     font-weight: 600;
   }
 }
-.D3{
+
+.D3 {
   color: $color_2;
   text-align: center;
   font-weight: 600;
   margin: 30px auto 0;
   display: block;
 }
-.des{
+
+.des {
   display: none;
   @include mq('tablet-wide') {
     display: flex;
   }
 }
-.mob{
+
+.mob {
   @include mq('tablet-wide') {
     display: none;
   }
