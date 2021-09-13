@@ -13,7 +13,7 @@ mixin head(title)
 mixin news(img, date, title, text)
     .block
         a.block__body.block-body(href="#")
-            .block-body__img= img
+            .block-body__img(style=`background-image: url(${img})`)
             .block-body__date= date
             .block-body__title= title
             .block-body__text= text

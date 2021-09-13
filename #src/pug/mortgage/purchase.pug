@@ -1,2 +1,15 @@
+include ../../pug/mixins
 section.purchase
     ._container
+        .purchase__title.title Другие варианты покупки
+        .purchase__container.swiper
+            .swiper-wrapper
+                .swiper-slide.purchase__slide
+                    +news('img/new1.png','','Ипотека','Ипотечный кредит предоставляется на приобретение строящейся квартиры, на первичном рынке недвижимости')
+                .swiper-slide.purchase__slide
+                    +news('img/new2.png','','Ипотека','Ипотечный кредит предоставляется на приобретение строящейся квартиры, на первичном рынке недвижимости')
+                .swiper-slide.purchase__slide
+                    +news('img/new3.png','','Ипотека','Ипотечный кредит предоставляется на приобретение строящейся квартиры, на первичном рынке недвижимости')
+                .swiper-slide.purchase__slide
+                    +news('img/new1.png','','Ипотека','Ипотечный кредит предоставляется на приобретение строящейся квартиры, на первичном рынке недвижимости')
+            .purchase__pagination._swiper_pagination
