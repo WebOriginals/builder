@@ -4,8 +4,8 @@ let liters = document.querySelectorAll('.sale-nav-top__element');
 let apartments = document.querySelectorAll('.sale-apartments');
 // кнопки кол-во комнат
 let rooms = document.querySelectorAll('.sale__nav-bottom__element');
-let dataElementLiter;
-let dataElementRoom;
+let dataElementLiter = 'all';
+let dataElementRoom = 'all';
 
 for(let liter of liters) {
     liter.addEventListener('click', function (event) {
