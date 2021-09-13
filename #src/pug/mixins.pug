@@ -8,3 +8,12 @@ mixin head(title)
         link(rel='stylesheet', href='css/style.min.css')
         link(rel='shortcut icon', href='favicon.ico')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+
+mixin news(img, date, title, text)
+    .block
+        a.block__body.block-body(href="#")
+            .block-body__img= img
+            .block-body__date= date
+            .block-body__title= title
+            .block-body__text= text
