@@ -1419,6 +1419,12 @@ body._pc .header-phone__link:hover {
           align-items: center;
 }
 
+.header__bottom {
+  border-top: 1px solid #31BEF4;
+  border-bottom: 1px solid #31BEF4;
+  padding: 15px;
+}
+
 .menu__icon {
   display: none;
 }
