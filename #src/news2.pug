@@ -1,0 +1,16 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('Новости')
+    body
+        .wrapper
+            include pug/_basice/_header
+            .page.main
+                include pug/news/slider
+                include pug/mortgage/purchase
+
+
+            include pug/_basice/_footer
+
+        include pug/_basice/_popup
+        include pug/_basice/_js

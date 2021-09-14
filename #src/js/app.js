@@ -29,4 +29,5 @@
 @@include('files/sliders/infrastructure.js')
 @@include('files/sliders/finishing.js')
 @@include('files/sliders/purchase.js')
+@@include('files/sliders/news-internal.js')
 //slider

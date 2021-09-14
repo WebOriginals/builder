@@ -28,6 +28,7 @@ $fontFamily: 'Montserrat', sans-serif;
 //@import "_basice/forms";
 //@import "_basice/bread-crumbs-headline";
 @import "_basice/ui";
+@import "_basice/pagging";
 @import "_defuld/nouislider";
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -88,5 +89,9 @@ $fontFamily: 'Montserrat', sans-serif;
 
 //howbuy
 @import "howbuy/first";
+
+//news
+@import "news/first";
+@import "news/slider";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

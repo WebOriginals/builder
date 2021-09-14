@@ -2,6 +2,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: $color_2;
+	padding-top: 50px;
 	// .pagging__arrow
 	&__arrow {
 	}
@@ -9,11 +11,15 @@
 	&__list {
 		display: flex;
 		li {
+			display: flex;
+			padding: 0 10px;
 		}
 	}
 	// .pagging__item
 	&__item {
-		&._active {
+		&._active,&:hover {
+			color: $color_3;
 		}
+
 	}
 }

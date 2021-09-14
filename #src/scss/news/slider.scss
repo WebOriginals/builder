@@ -1,0 +1,58 @@
+.new-slider{
+  padding: 150px 0 25px;
+  @include mq('tablet') {
+    padding: 250px 0 50px;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__grid{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 30px;
+    @include mq('tablet') {
+      grid-template-columns: 500px 1fr;
+    }
+  }
+  &__container{
+    min-width: 0;
+    width: 100%;
+
+  }
+  &__slide{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mq('tablet') {
+      height: 280px;
+    }
+  }
+  &__list{
+    display: grid;
+    grid-gap: 20px;
+    align-content: center;
+
+    li{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      align-items: center;
+    }
+  }
+  &__body{
+    position: relative;
+    padding: 0 50px;
+    width: 100%;
+    min-width: 0;
+  }
+  &__nav{
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

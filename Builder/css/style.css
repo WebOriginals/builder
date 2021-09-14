@@ -285,6 +285,7 @@ body._lock {
   color: #aaa;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .block-body__title {
@@ -555,6 +556,38 @@ body.ie ._ibg img {
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.pagging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #212D55;
+  padding-top: 50px;
+}
+
+.pagging__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagging__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+}
+
+.pagging__item._active,
+.pagging__item:hover {
+  color: #31BEF4;
 }
 
 /*! nouislider - 14.6.0 - 6/27/2020 */
@@ -3524,6 +3557,80 @@ footer a:hover {
   margin-top: 50px;
 }
 
+.new__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  grid-auto-columns: 360px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.new-slider {
+  padding: 150px 0 25px;
+}
+
+.new-slider__title {
+  margin-bottom: 50px;
+}
+
+.new-slider__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.new-slider__container {
+  min-width: 0;
+  width: 100%;
+}
+
+.new-slider__slide {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.new-slider__list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.new-slider__list li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+  grid-template-columns: 50px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-slider__body {
+  position: relative;
+  padding: 0 50px;
+  width: 100%;
+  min-width: 0;
+}
+
+.new-slider__nav {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .block {
     padding: 20px;
@@ -3770,6 +3877,19 @@ footer a:hover {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2 / 4;
+  }
+
+  .new-slider {
+    padding: 250px 0 50px;
+  }
+
+  .new-slider__grid {
+    -ms-grid-columns: 500px 1fr;
+    grid-template-columns: 500px 1fr;
+  }
+
+  .new-slider__slide {
+    height: 280px;
   }
 }
 
