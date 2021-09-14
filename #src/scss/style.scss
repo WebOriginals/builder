@@ -25,10 +25,6 @@ $fontFamily: 'Montserrat', sans-serif;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 @import "_defuld/originStyle";
-//@import "_basice/forms";
-//@import "_basice/bread-crumbs-headline";
-@import "_basice/ui";
-@import "_basice/pagging";
 @import "_defuld/nouislider";
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -39,7 +35,8 @@ $fontFamily: 'Montserrat', sans-serif;
 @import "../component/Tabs/scss/tabs.scss";
 //@import "../component/Quantity/scss/quantity.scss";
 
-
+@import "_basice/ui";
+@import "_basice/pagging";
 @import "_basice/popup";
 @import "_basice/header";
 @import "_basice/menu/menu";
