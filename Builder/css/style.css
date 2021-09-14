@@ -3245,14 +3245,13 @@ footer a:hover {
   margin-bottom: 50px;
 }
 
-.HCtab__nav {
-  margin-bottom: 50px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
+.HCtab-nav__container {
+  margin-bottom: 30px;
+  padding: 10px;
+  margin-right: auto;
 }
 
-.HCtab__nav .tabs-nav__item {
+.HCtab .tabs-nav__item {
   background: #F9FCFD;
   -webkit-box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
           box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
@@ -3260,7 +3259,7 @@ footer a:hover {
   padding: 10px;
 }
 
-.HCtab__nav .tabs-nav__item .HCtab__description {
+.HCtab .tabs-nav__item .HCtab__description {
   font-weight: 600;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.1);
@@ -3278,7 +3277,7 @@ footer a:hover {
           align-items: center;
 }
 
-.HCtab__nav .is-active .HCtab__description {
+.HCtab .swiper-slide-thumb-active .HCtab__description {
   border: 1px solid #31BEF4;
   color: #31BEF4;
 }
@@ -4233,12 +4232,11 @@ footer a:hover {
     padding: 50px 0;
   }
 
-  .HCtab__nav {
-    -ms-grid-columns: (200px)[4];
-    grid-template-columns: repeat(4, 200px);
+  .HCtab-nav__container {
+    width: 80%;
   }
 
-  .HCtab__nav .tabs-nav__item .HCtab__description {
+  .HCtab .tabs-nav__item .HCtab__description {
     min-height: 70px;
   }
 

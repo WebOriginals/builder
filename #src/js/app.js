@@ -30,4 +30,5 @@
 @@include('files/sliders/finishing.js')
 @@include('files/sliders/purchase.js')
 @@include('files/sliders/news-internal.js')
+@@include('files/sliders/tab.js')
 //slider
