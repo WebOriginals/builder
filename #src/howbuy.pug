@@ -1,0 +1,16 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    +head('как купить')
+    body
+        .wrapper
+            include pug/_basice/_header
+            .page.main
+                include pug/howbuy/first
+
+
+
+            include pug/_basice/_footer
+
+        include pug/_basice/_popup
+        include pug/_basice/_js

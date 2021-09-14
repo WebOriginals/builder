@@ -3482,6 +3482,48 @@ footer a:hover {
           justify-content: center;
 }
 
+.installment {
+  padding: 150px 0 50px;
+}
+
+.installment__title {
+  font-size: 60px;
+  text-align: center;
+}
+
+.text__title {
+  margin-bottom: 50px;
+}
+
+.text ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+.text li {
+  padding-left: 20px;
+  background-image: url("../img/icons/toch.svg");
+  background-position: left top 5px;
+  background-repeat: no-repeat;
+}
+
+.howbuy {
+  padding: 150px 0 50px;
+}
+
+.howbuy__title {
+  margin-bottom: 50px;
+}
+
+.howbuy__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
 @media only screen and (min-width: 768px) {
   .block {
     padding: 20px;
@@ -3704,6 +3746,30 @@ footer a:hover {
 
   .purchase {
     padding: 50px 0;
+  }
+
+  .installment {
+    padding: 250px 0 100px;
+  }
+
+  .howbuy {
+    padding: 250px 0 50px;
+  }
+
+  .howbuy__grid {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .howbuy__grid .block {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .howbuy__grid .block:nth-child(4) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
   }
 }
 
@@ -4270,6 +4336,10 @@ footer a:hover {
 
   .HCtab-pane__text p {
     font-size: calc(14px + 2 * ((100vw - 320px) / 830));
+  }
+
+  .installment__title {
+    font-size: calc(28px + 32 * ((100vw - 320px) / 830));
   }
 }
 

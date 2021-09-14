@@ -1,0 +1,11 @@
+.installment{
+  padding: 150px 0 50px;
+  @include mq('tablet') {
+    padding: 250px 0 100px;
+  }
+
+  &__title{
+    @include adaptive-font(60,28,1);
+    text-align: center;
+  }
+}
