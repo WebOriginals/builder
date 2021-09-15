@@ -6,7 +6,6 @@
 @@include('files/popup.js')
 @@include('files/headerFix.js')
 @@include('files/calculator.js')
-@@include('files/infrastructure-map.js')
 @@include('files/saleTab.js')
 
 
@@ -26,6 +25,7 @@
 @@include('files/sliders/room.js')
 @@include('files/sliders/doc.js')
 @@include('files/sliders/house-sl.js')
+@@include('files/sliders/infrastructure.js')
 @@include('files/sliders/finishing.js')
 @@include('files/sliders/purchase.js')
 @@include('files/sliders/news-internal.js')
