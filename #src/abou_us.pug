@@ -3,9 +3,11 @@ doctype html
 html(lang="ru")
     +head('О нашей кмпании')
     body
-        .wrapper.not-main
+        .wrapper
             include pug/_basice/_header
-            .page.main
+            .page
+                include pug/_basice/_crumbs
+                include pug/_basice/_title
                 include pug/about_us/slider-tel
                 include pug/about_us/building
                 include pug/about_us/certificates

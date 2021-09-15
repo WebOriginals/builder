@@ -1,12 +1,9 @@
 .howbuy{
-  padding: 150px 0 50px;
+  padding: 30px 0;
   @include mq('tablet') {
-    padding: 250px 0 50px;
+    padding: 10px 0 50px;
   }
-  &__title{
-    margin-bottom: 50px;
 
-  }
   &__grid{
     display: grid;
     grid-gap: 30px;

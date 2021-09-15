@@ -3,9 +3,11 @@ doctype html
 html(lang="ru")
     +head('Контакты')
     body
-        .wrapper.not-main
+        .wrapper
             include pug/_basice/_header
-            .page.main
+            .page
+                include pug/_basice/_crumbs
+                include pug/_basice/_title
                 include pug/contact/info
                 include pug/contact/map
 

@@ -1635,6 +1635,26 @@ footer a:hover {
   grid-gap: 30px;
 }
 
+._title {
+  padding: 30px 0;
+}
+
+._title h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.crumbs {
+  padding: 30px 0;
+}
+
+.crumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .first-slide {
   background-position: center;
   background-repeat: no-repeat;
@@ -3496,11 +3516,7 @@ footer a:hover {
 }
 
 .howbuy {
-  padding: 150px 0 50px;
-}
-
-.howbuy__title {
-  margin-bottom: 50px;
+  padding: 30px 0;
 }
 
 .howbuy__grid {
@@ -3510,7 +3526,11 @@ footer a:hover {
   margin-top: 50px;
 }
 
-.new__grid {
+.news {
+  padding: 30px 0;
+}
+
+.news__grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
@@ -3519,7 +3539,7 @@ footer a:hover {
 }
 
 .new-slider {
-  padding: 150px 0 25px;
+  padding: 30px 0;
 }
 
 .new-slider__title {
@@ -3822,7 +3842,7 @@ footer a:hover {
   }
 
   .howbuy {
-    padding: 250px 0 50px;
+    padding: 10px 0 50px;
   }
 
   .howbuy__grid {
@@ -3841,8 +3861,12 @@ footer a:hover {
     grid-column: 2 / 4;
   }
 
+  .news {
+    padding: 50px 0;
+  }
+
   .new-slider {
-    padding: 250px 0 50px;
+    padding: 50px 0;
   }
 
   .new-slider__grid {
@@ -4261,7 +4285,7 @@ footer a:hover {
 
 @media only screen and (min-width: 1200px) {
   .page {
-    padding-top: 120px;
+    padding-top: 130px;
     padding-bottom: 40px;
   }
 
@@ -4323,6 +4347,10 @@ footer a:hover {
 
   .popup-body__title {
     font-size: calc(24px + 4 * ((100vw - 320px) / 830));
+  }
+
+  ._title h1 {
+    font-size: calc(28px + 17 * ((100vw - 320px) / 830));
   }
 
   .first-slide__title {
@@ -4694,6 +4722,10 @@ footer a:hover {
 @media only screen and (max-width: 989px) {
   .header-phone-desc,
   .header-callback-desc {
+    display: none;
+  }
+
+  .header__bottom {
     display: none;
   }
 }

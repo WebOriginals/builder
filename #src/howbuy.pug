@@ -5,7 +5,9 @@ html(lang="ru")
     body
         .wrapper
             include pug/_basice/_header
-            .page.main
+            .page
+                include pug/_basice/_crumbs
+                include pug/_basice/_title
                 include pug/howbuy/first
 
 
