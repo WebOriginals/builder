@@ -3,5 +3,8 @@
 
   &__list{
     display: flex;
+    a{
+      color: $color_2;
+    }
   }
 }
