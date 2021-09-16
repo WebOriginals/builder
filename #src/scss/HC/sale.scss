@@ -24,7 +24,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     @include mq('tablet-wide') {
-      grid-template-columns: 160px 160px 160px;
+      grid-template-columns: 160px 160px 260px;
     }
 
     span {
@@ -114,6 +114,10 @@
   &.hide {
     display: none;
   }
+  &.showed {
+    display: none;
+  }
+
 
   &__body {
     display: grid;
@@ -189,6 +193,14 @@
     }
   }
 }
+
+.add-apartments{
+  font-size: 20px;
+  font-weight: 600;
+  color: $color_3;
+  cursor: pointer;
+}
+
 
 .sale__btns {
   margin-top: 50px;

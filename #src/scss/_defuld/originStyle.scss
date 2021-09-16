@@ -234,7 +234,7 @@ body {
   padding-bottom: 25px;
   @include mq('desktop') {
     padding-top: 130px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   &.main {

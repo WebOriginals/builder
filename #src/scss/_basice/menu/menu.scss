@@ -29,6 +29,7 @@ body._pc {
           visibility: visible;
           transform: translate(0px, 0px);
           pointer-events: all;
+          z-index: 2;
         }
         .menu__arrow {
           transform: scaleY(-1);

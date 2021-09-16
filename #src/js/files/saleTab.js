@@ -6,12 +6,13 @@ let apartments = document.querySelectorAll('.sale-apartments');
 let rooms = document.querySelectorAll('.sale__nav-bottom__element');
 let dataElementLiter = 'all';
 let dataElementRoom = 'all';
+let addApartments = document.querySelector('.add-apartments');
 
-for(let liter of liters) {
+for (let liter of liters) {
     liter.addEventListener('click', function (event) {
         let target = event.target;
 
-        if(target.dataset.mainliter === undefined){
+        if (target.dataset.mainliter === undefined) {
             dataElementLiter = target.parentNode.dataset.mainliter
             target = target.parentNode;
         } else {
@@ -25,22 +26,28 @@ for(let liter of liters) {
             target.classList.add('active');
         }
 
+        let count_showed = 0;
+        for (let i = 0; i < apartments.length; i++) {
+            if (apartments[i].dataset.liter !== dataElementLiter && dataElementLiter !== 'all') {
+                apartments[i].classList.add('hide');
+                apartments[i].classList.remove('showed');
 
-        for (let apartment of apartments){
-            if (apartment.dataset.liter !== dataElementLiter &&  dataElementLiter !== 'all') {
-                apartment.classList.add('hide')
+            } else if( count_showed > 6 ){
+                apartments[i].classList.add('hide');
+                apartments[i].classList.add('showed');
             } else {
-                apartment.classList.remove('hide')
+                console.log('1');
+                apartments[i].classList.remove('hide');
+                count_showed++;
             }
         }
-
     });
 };
 
-for(let room of rooms) {
+for (let room of rooms) {
     room.addEventListener('click', function (event) {
         let target = event.target;
-        if(target.dataset.mainliter === undefined){
+        if (target.dataset.mainliter === undefined) {
             dataElementRoom = target.parentNode.dataset.mainroom
             target = target.parentNode;
         } else {
@@ -54,22 +61,47 @@ for(let room of rooms) {
             target.classList.add('active');
         }
 
-
-        for (let apartment of apartments){
+        let count_showed = 0;
+        for (let apartment of apartments) {
             /*если  элемент не равен выбранному то его скрыть*/
-            if(document.querySelector('.sale-nav-top')){
-                if (apartment.dataset.room !== dataElementRoom && dataElementRoom !== 'all'  ||  apartment.dataset.liter !== dataElementLiter && dataElementLiter !== 'all') {
-                    apartment.classList.add('hide')
+            if (document.querySelector('.sale-nav-top')) {
+                if (apartment.dataset.room !== dataElementRoom && dataElementRoom !== 'all' || apartment.dataset.liter !== dataElementLiter && dataElementLiter !== 'all') {
+                    apartment.classList.add('hide');
+
+                } else if( count_showed > 6 ){
+                    apartments[i].classList.add('hide');
+                    apartments[i].classList.add('showed');
                 } else {
-                    apartment.classList.remove('hide')
+                    apartment.classList.remove('hide');
+                    count_showed++;
                 }
             } else {
-                if (apartment.dataset.room !== dataElementRoom &&  dataElementRoom !== 'all') {
-                    apartment.classList.add('hide')
+                if (apartment.dataset.room !== dataElementRoom && dataElementRoom !== 'all') {
+                    apartment.classList.add('hide');
+                } else if( count_showed > 6 ){
+                    apartments[i].classList.add('hide');
+                    apartments[i].classList.add('showed');
                 } else {
-                    apartment.classList.remove('hide')
+                    apartment.classList.remove('hide');
+                    count_showed++;
                 }
             }
         }
     });
+
 };
+
+if (document.querySelector('.sale')) {
+    for (let i = 0; i < apartments.length; i++) {
+        if (i > 1) {
+            apartments[i].classList.add('showed')
+        }
+    }
+    addApartments.addEventListener('click', () => {
+        for (let i = 0; i < apartments.length; i++) {
+            apartments[i].classList.remove('showed');
+
+        }
+        addApartments.remove()
+    })
+}

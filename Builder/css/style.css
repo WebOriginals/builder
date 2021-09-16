@@ -1451,6 +1451,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   pointer-events: all;
+  z-index: 2;
 }
 
 body._pc .menu__list > li:hover .menu__arrow {
@@ -3100,6 +3101,10 @@ footer a:hover {
   display: none;
 }
 
+.sale-apartments.showed {
+  display: none;
+}
+
 .sale-apartments__body {
   display: -ms-grid;
   display: grid;
@@ -3174,6 +3179,13 @@ footer a:hover {
 
 .sale-apartments__btn {
   font-size: 18px;
+}
+
+.add-apartments {
+  font-size: 20px;
+  font-weight: 600;
+  color: #31BEF4;
+  cursor: pointer;
 }
 
 .sale__btns {
@@ -3381,7 +3393,7 @@ footer a:hover {
 
 .infrastructure__container {
   position: absolute;
-  z-index: 1000;
+  z-index: 3;
   top: 100px;
   right: 0;
   padding: 10px 10px 50px 10px;
@@ -3412,16 +3424,18 @@ footer a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px 0 10px;
 }
 
 .infrastructure__body span {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .infrastructure__map {
   width: 100%;
   height: 80vh;
+  z-index: 2;
 }
 
 .infrastructure__nav {
@@ -4177,8 +4191,8 @@ footer a:hover {
   }
 
   .sale-nav-top {
-    -ms-grid-columns: 160px 160px 160px;
-    grid-template-columns: 160px 160px 160px;
+    -ms-grid-columns: 160px 160px 260px;
+    grid-template-columns: 160px 160px 260px;
   }
 
   .sale__nav-bottom {
@@ -4290,7 +4304,7 @@ footer a:hover {
 @media only screen and (min-width: 1200px) {
   .page {
     padding-top: 130px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .body-header {
