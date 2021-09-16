@@ -2,7 +2,7 @@
 
 }
 .first-slide{
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -14,17 +14,14 @@
 
   @include mq('tablet-wide') {
     margin-top: 5%;
-    height: 100vh;
-  }
-  @include mq('desktop-wide') {
-    margin-top: 5%;
-    height: 80vh;
+    height: 92vh;
   }
   @include maq('tablet') {
     height: 95vh;
   }
 }
 .first-slide__title{
+  font-family: 'Raleway', sans-serif;
   @include adaptive-font(60,28,1);
   @include mq('tablet-wide') {
     width: 60%;
@@ -38,6 +35,11 @@
   grid-gap: 30px;
   @include maq('tablet') {
     display: none;
+  }
+  li{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto 1fr;
   }
 }
 .first-slide__btn{

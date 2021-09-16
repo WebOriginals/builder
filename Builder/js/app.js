@@ -452,7 +452,7 @@ if (document.querySelector('.sale')) {
             }
             apartments[i].classList.remove('showed')
         }
-        addApartments.remove()
+        addApartments.classList.add('hide')
     })
 }
 
